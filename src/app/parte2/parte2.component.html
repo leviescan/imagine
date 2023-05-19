@@ -1,1 +1,54 @@
-<p>parte2 works!</p>
+<div class="container-fluid">
+    <h6>1. Escribir una función que recibe un arreglo de strings y retornar un arreglo con la longitud de cada
+        string.
+        </h6>
+
+        <div class="row">
+            <div class="col-5">
+                <ul  *ngFor="let user of users">
+                    <li> los cadenas de caracteres son estas => {{user.coment}}</li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <ul  *ngFor="let user of lon">
+                    <li> su longitud es esta {{user}}</li>
+                </ul>
+            </div>
+        </div>
+</div>
+
+<div class="container-fluid">
+    
+
+        <div class="row">
+            <div class="col-6">
+                <h6>2. Escribir una función que encuentre un número en un arreglo de números de la forma más eficiente
+                    posible. El arreglo de números de entrada puede estar desordenado
+                    </h6>
+                   <textarea name="" id="" cols="30" rows="10" style="width: 90%;">
+                    function encontrarNumero(array: number[], numero: number): boolean {
+                        for (const elemento of array) {
+                          if (elemento === numero) {
+                            return true;
+                          }
+                        }
+                        return false;
+                      }
+                   </textarea>
+
+                
+            </div>
+            <div class="col-6">
+                <h6>3. Escribir una función que al ser llamada saludo('Hola')('Mundo') imprima el texto 'Hola Mundo'. Ojo,
+                    la función se debe ejecutar tal cual saludo('Hola')('Mundo'), no hay error al escribir este enunciado.
+                     </h6>
+                     <textarea name="" id="" cols="30" rows="9" style="width: 90%;">
+                        function saludo(saludoInicial: string) {
+                            return function(saludoFinal: string) {
+                              console.log(saludoInicial + ' ' + saludoFinal);
+                            }
+                          }
+                    </textarea>
+            </div>
+        </div>
+</div>

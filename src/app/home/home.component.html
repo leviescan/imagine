@@ -1,0 +1,98 @@
+<div class="container-xxl  ">
+
+    <h6 class="text-center my-3"><a href="" routerLink="/parte2" class="spa"><span class="spa1">Are you Still interested? -</span>  <span class="spa2"> We're at $1.5B Unicorn status. Still want a with a potential High ROY? Apply Now </span> </a> <small class="small"> &nbsp; Anuncio </small> <span class="puntos">  ... </span></h6>
+  
+  <div class="row  d-flex justify-content-start">
+    <div class="col-2 mar "><div class="mb-4 "> 
+      <img src="assets/images/card1.png" class="card-img" alt="..." style="height: 150%; width: 100%;">
+   </div>
+  
+   <div class="card">
+    <img src="assets/images/ca3.png" class="card-img" alt="..." style="height: 150%; width: 100%;">
+   </div>
+  </div>
+    <div class="mar3"><div class=""><div class="mb-4"> 
+      <div>
+        <div class="card">
+          <form [formGroup]="formU"  class="signin-form">
+  
+          <div class="search mt-3">
+            <input type="text" formControlName="coment" (keyup.enter)="onSubmit()"  placeholder="Crear publicación">
+            <i class="fa-regular fa-pen-to-square ico"></i>
+          </div>
+  
+          
+       
+  
+        </form>
+  
+          <ul class="icon-list">
+            <li>
+              <i class=""><img class="imgI " src="assets/images/fo.png" alt="Icono"></i>
+              <span>Foto</span>
+            </li>
+            <li>
+              <i class=""><img class="imgI " src="assets/images/vi.png" alt="Icono"></i>
+              <span>Video</span>
+            </li>
+            <li>
+              <i class=""><img class="imgI " src="assets/images/ev.png" alt="Icono"></i>
+              <span>Evento</span>
+            </li>
+  
+            <li>
+              <i class=""><img class="imgI " src="assets/images/cu.png" alt="Icono"></i>
+              <span>Escribir articulo</span>
+            </li>
+          </ul>
+          
+          
+        </div>
+        <div class="row ">
+          
+          <div class="col-8  line"></div>
+          <div class="se"><div class="custom-select">
+            <label class="or" for="select-option">Ordenar por:</label>
+            <select (ngModelChange)="loadProductLi($event)" [(ngModel)]="value">
+              <option value="asc">Anteriores</option>
+              <option value="desc">Recientes</option>
+            </select>
+            <span class="custom-arrow"></span>
+          </div></div>
+        </div>
+  
+        <div *ngFor="let user of users">
+        <div class="card mt-2">
+          <div class="card-header">
+            ImagineappsTest
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Uuario</h5>
+            <p class="card-text">{{user.coment}}</p>
+            <button href="#" type="submit"  (click)="onDeleteUser(user.id)" class="btn btn-primary"> Eliminar comentario</button>
+          </div>
+  
+          <div class="card-footer text-body-secondary text-center">
+             <cite title="Source Title "><small>  {{user.date | date:"medium"}} </small></cite>
+          </div>
+        </div>
+      </div>
+      </div>
+      <img src="assets/images/ca9.png" class="card-img mt-2" alt="..." style="height: 100%; width: 100%;">
+   </div></div></div>
+    <div class="col-3 mar2 "><div class="mb-4"> 
+      
+      <img src="assets/images/ca5.png" class="card-img" alt="..." style="height: 150%; width: 100%;">
+      
+   </div>
+  
+   <div class="mb-4"> 
+      
+    <img src="assets/images/ca7.png" class="card-img" alt="..." style="height: 150%; width: 100%;">
+    
+  </div>
+  </div>
+  </div>
+  
+  
+  </div>

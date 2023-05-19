@@ -1,0 +1,164 @@
+.spa{
+    color: black;
+    text-decoration: none;
+}
+
+.spa1{
+    color: rgb(19, 141, 255);
+    text-decoration: underline;
+    text-underline-offset: 1px;
+    text-decoration-color: rgb(19, 141, 255);
+    text-decoration-thickness: 1px;
+}
+
+.spa2{
+    text-decoration: underline;
+    text-underline-offset: 1px;
+    text-decoration-color: rgb(0, 0, 0);
+    text-decoration-thickness: 1px;
+}
+
+.small{
+    font-size: 0.77em;
+    color: rgb(143, 143, 143);
+}
+
+.puntos{
+    position: absolute;
+    line-height: 25%;
+    font-size: 1.4em;
+    padding: 2px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    margin-right: 17px;
+    position: relative;
+  }
+  .ico{
+      position: absolute;
+      left: 5%;
+      color: #666666;
+      
+  }
+  
+  .search input {
+    padding: 0.2em 0.3em 0.3em 3em;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    height: 2.8em;
+    width: 43em;
+    font-size: 1em;
+    font-weight: 500;
+   // border: 1px solid #ccc;
+  }
+
+  .icon-list {
+    list-style: none;
+    margin-left: 14px;
+    margin-top: 12px;
+    margin-right: 0;
+    padding: 0;
+    display: flex; /* Agregamos esta propiedad para que los elementos se muestren en línea */
+  }
+  
+  .icon-list li {
+    display: flex;
+    align-items: center;
+    margin-right: 6.59%; /* Agregamos un margen a la derecha para separar los elementos */
+  }
+
+  .icon-list li:nth-child(4) {
+    margin-right: 0px;
+    padding-left: 3%;
+
+  }
+  
+  .icon-list li i {
+    margin-right: 5px; /* Ajustamos el margen derecho del icono */
+  }
+  
+  .icon-list li span {
+    font-size: 16px;
+  }
+
+  .imgI{
+    height: 30px;
+    width: 35px;
+  }
+
+  .mar{
+    margin-left: 6%;
+  }
+
+  .mar2{
+    margin-right: 2%;
+  }
+
+  .mar3{
+    max-width: 600px;
+  }
+  .root{
+    position: relative;
+  }
+
+
+  .line{
+    
+    border-bottom: 1px solid #ccc;
+    top: 5%;
+    max-width: 400px;
+    height: 16px;
+    margin-left: 2.2%;
+  }
+ 
+  .se{
+    max-width: 100px;
+    margin-left: 1%;
+  }
+
+  .or{
+    color: #868686;
+    font-size: 0.8em;
+  }
+
+  .custom-select {
+    position: relative;
+    display: inline-block;
+
+  }
+  
+  .custom-select select {
+    position: absolute;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    font-size: 12.9px;
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+    width: 8em;
+    top: -5%;
+  }
+  
+  .custom-select .custom-arrow {
+    position: absolute;
+    top: 62%;
+    right: -83px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #333;
+    pointer-events: none;
+  }
+  
+  
